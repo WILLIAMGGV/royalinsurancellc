@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- INSERTAR LAS FUENTES ACA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIN DE LAS FUENTAS -->
+    <title>Royal Insurance LLC</title>
+
+    <!-- INSERTAR HERRAMIENTA TAILWIND Y SCRIPTS -->
+    <script src="style/cdntailwind.5"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/estilos.css" />
+    <link rel="stylesheet" href="style/estilos2.css">
+    <!-- IMPORTAR ANIMACIONES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- INSERTAR LOS ESTILOS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </head>
+  <body>
+    <!-- CONTENEDOR SLIDER -->
+
+    <!-- FIN DE CONTENEDOR SLIDER -->
+
+    <div class="fondo-azul-oscuro h-[33px] m-0"></div>
+
+    <div class="flex flex-row place-content-between">
+      <img class="p-6" src="img/logo.png" width="300px" height="150px" alt="" />
+      <div
+        class="flex flex-row place-content-center justify-center items-center quicksand-medio text-lg"
+      >
+        <span class="p-4 hover:cursor-pointer hover:font-bold"
+          ><span class="underline2 texto-azul-oscuro">Inicio</span></span
+        >
+        <div id="menuservice" class="p-4 hover:cursor-pointer flex flex-col">
+          <span id="titleservice" class="underline2 texto-azul-oscuro"
+            >Nuestros Servicios</span
+          >
+          <div
+            id="submenu"
+            class="hidden static flex flex-row place-content-between absolute bg-[#003366] mt-9 text-white w-[500px] h-[300px] rounded-lg border-2 border-white"
+          >
+            <div class="m-2 flex flex-col text-white fuente-acumin text-[14px]">
+              <span id="menu1" class="hover:font-bold">OBAMACARE</span>
+              <span id="menu2" class="hover:font-bold"
+                >P&Oacute;LIZAS PRIVADAS</span
+              >
+              <span id="menu3" class="hover:font-bold"
+                >PLANES DE SEGURO DENTAL Y VISI&Oacute;N</span
+              >
+              <span id="menu4" class="hover:font-bold"
+                >P&Oacute;LIZAS DE VIDA</span
+              >
+              <span id="menu5" class="hover:font-bold"
+                >P&Oacute;LIZAS ACCIDENTALES</span
+              >
+              <span id="menu6" class="hover:font-bold"
+                >PLANES DE DESCUENTO PARA INDOCUMENTADOS</span
+              >
+              <span id="menu7" class="hover:font-bold"
+                >P&Oacute;LIZAS DE AUTOS</span
+              >
+              <span id="menu8" class="hover:font-bold"
+                >P&Oacute;LIZAS DE HOME</span
+              >
+            </div>
+
+            <div class="relative w-[250px] h-full rounded-r-lg border-l-2">
+              <img
+                id="imgservice"
+                src="/img/service1.jpg"
+                class="h-full rounded-r-lg border-l-2"
+                alt=""
+              />
+              <div
+                class="absolute fuente-acumin-cursiva w-[100%] h-[120px] bg-opacity-75 text-center mt-[-120px] bg-[#003366] rounded-lg"
+              >
+                <p id="titlesubmenu" class="text-sm p-2 leading-[14px]">
+                  PLANES DE SEGURO DENTAL Y VISI&Oacute;N
+                </p>
+                <p id="desmenu" class="text-[10px] p-1 leading-[14px]">
+                  Sonríe con confianza y cuida tus ojos. Nuestros seguros
+                  dentales y de visión te ofrecen una cobertura completa para
+                  mantener tu bienestar bucal y visual.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="p-4 hover:cursor-pointer hover:font-bold"
+          ><span class="underline2 texto-azul-oscuro">Testiminios</span></span
+        >
+        <span class="p-4 hover:cursor-pointer hover:font-bold"
+          ><span class="underline2 texto-azul-oscuro">Acerca de Mi</span></span
+        >
+        <span class="p-4 hover:cursor-pointer hover:font-bold"
+          ><span class="underline2 texto-azul-oscuro">Contact</span></span
+        >
+        <div class="p-4">
+          <div class="flex flex-row">
+            <div
+              class="rounded-full fondo-azul-oscuro p-3 m-1 hover:cursor-pointer hover:bg-[#cc9933] relative"
+            >
+              <div
+                class="absolute inset-0 rounded-full border-2 border-black opacity-0 hover:opacity-100 transition-opacity"
+              ></div>
+              <svg
+                class="text-white hover:text-[#000000] relative z-10"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="rounded-full fondo-azul-oscuro p-3 m-1 hover:cursor-pointer hover:bg-[#cc9933] relative"
+            >
+              <div
+                class="absolute inset-0 rounded-full border-2 border-black opacity-0 hover:opacity-100 transition-opacity"
+              ></div>
+              <svg
+                class="text-white hover:text-[#000000] relative z-10"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="rounded-full fondo-azul-oscuro p-3 m-1 hover:cursor-pointer hover:bg-[#cc9933] relative"
+            >
+              <div
+                class="absolute inset-0 rounded-full border-2 border-black opacity-0 hover:opacity-100 transition-opacity"
+              ></div>
+              <svg
+                class="text-white hover:text-[#000000] relative z-10"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="currentColor"
+                  d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="imagenfondo"
+      class="fondo1 w-full border-t-2 h-[600px] flex flex-col"
+    >
+      <div
+        id="titleslider"
+        class="ml-[-50%] flex flex-col mt-[50px] animate__animated animate__fadeIn retraso"
+      >
+        <span
+          class="text-white bg-[#003366] flex flex-col ml-4 p-4 text-xl md:text-4xl fuente-acumin bg-opacity-30 rounded-md"
+        >
+          <span>OBAMACARE PARA TI Y TU FAMILIA</span>
+          <p
+            id="descripcionslider"
+            class="text-sm quicksand-medio text-center justify-center animate__animated animate__backInUp retraso2"
+          >
+            ¡No esperes más! Obtén Cobertura de Salud Asequible Ahora con
+            Obamacare
+          </p>
+        </span>
+        <div
+          id="botonc"
+          class="flex flex-row place-content-end"
+         
+        >
+          <span
+            class="mt-[20px] bg-[#cccc99] p-2 rounded-lg text-sm bg-opacity-30 text-white hover:font-bold cursor-pointer hover:text-gray-900 hover:bg-[#cc9933]"
+            >Mas Informaci&oacute;n</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row place-content-between  items-center mt-[50px]">
+      <div class="fondo-dorado h-[23px] w-[20%] m-0"></div>
+      <span
+        class="flex flex-row place-content-center font-bold fuente-acumin text-5xl text-[#003366] animate__animated animate__fadeIn retraso"
+        >COMPA&Nacute;IAS DE SEGUROS</span
+      >
+      <div class="bg-[#cc9933] h-[23px] w-[20%] m-0"></div>
+    </div>
+
+    <div class="logos">
+      <div class="logos-slide flex flex-row">
+        <img src="img/logos/logo1.png" />
+        <img src="img/logos/logo2.png" />
+        <img src="img/logos/logo3.png" />
+        <img src="img/logos/logo4.png" />
+        <img src="img/logos/logo5.png" />
+        <img src="img/logos/logo6.png" />
+        <img src="img/logos/logo7.png" />
+        <img src="img/logos/logo8.png" />
+        <img src="img/logos/logo9.png" />
+        <img src="img/logos/logo10.png" />
+        <img src="img/logos/logo11.png" />
+        <img src="img/logos/logo12.png" />
+        <img src="img/logos/logo13.png" />
+        <img src="img/logos/logo14.png" />
+        <img src="img/logos/logo15.png" />
+        <img src="img/logos/logo16.svg" />
+        <img src="img/logos/logo17.png" />
+        <img src="img/logos/logo18.png" />
+      </div>
+    </div>
+
+    <div class="flex flex-row place-content-between items-center mt-[50px]">
+      <div class="fondo-dorado h-[23px] w-[20%] m-0"></div>
+      <span
+        class="flex flex-row place-content-center items-center quicksand-grueso text-2xl text-[#003366] mt-[-5px]"
+        ><p class="text-center">
+          <span class="texto-dorado">En</span> ROYAL INSURANCE USA LLC,<br /><span
+            class="texto-dorado"
+            >entendemos que la vida puede ser impredecible,</span
+          ><br /><span class="texto-dorado"
+              >pero eso no significa que no puedas tomar el control</span
+            >
+          <br /><span class="texto-dorado"
+          >y proteger lo que más valoras.
+        </p></span
+      >
+      <div class="bg-[#cc9933] h-[23px] w-[20%] m-0"></div>
+    </div>
+
+    <div
+      id="imagenfondo"
+      class="fondoraya w-full mt-[20px]  h-[600px] flex flex-col"
+    >
+     <div class="flex flex-col justify-center items-center">
+      <div class="text-5xl fuente-acumin mt-[50px] font-bold texto-azul-oscuro">ESTADOS EN EL QUE TENEMOS ATENCI&Oacute;N</div>
+      <div class="m-4 flex flex-row justify-center place-content-center"><img src="img/mapa.png" width="800px" height="800px" alt=""></div>
+     </div>
+    </div>
+
+
+
+    <div class=" flex flex-col justify-center items-center bg-[#003366]">
+      <div class="mt-[60px] text-[20px] md:text-[30px] sm:text-[20px] lg:text-[40px] xl:text-[50px]  fuente-acumin-bold texto-dorado">NUESTROS SERVICIOS</div>
+      <section class="container bg-[#003366] mt-[-10px]">
+        <div class="card__container swiper">
+           <div class="card__content">
+              <div class="swiper-wrapper">
+            
+
+                 <article class="card__article swiper-slide bg-white">
+                  <div class="card__image">
+                     <img src="img/service1.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+                  </div>
+   
+                  <div class="card__data  bg-[#ffffcc]">
+                     <h3 class="card__name fuente-acumin-cursiva text-[16px]">OBAMACARE</h3>
+                     <p class="card__description leading-[16px]  text-gray-700">
+                      Descubre los beneficios de Obamacare y asegúrate de tener acceso a servicios médicos de calidad sin comprometer tu bolsillo.
+                     </p>
+   
+                     <a href="#" class="card__button rounded-full bg-[#003366] text-[#ffffcc] hover:bg-[#cc9933] hover:text-[#003366]">Mas Informacion</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide bg-white">
+                <div class="card__image">
+                   <img src="img/service2.jpg" alt="image" class="card__img">
+                   <div class="card__shadow"></div>
+                </div>
+ 
+                <div class="card__data  bg-[#ffffcc]">
+                   <h3 class="card__name fuente-acumin-cursiva text-[16px] ">Medicare</h3>
+                   <p class="card__description leading-[16px]  text-gray-700">
+                    Prepárate para disfrutar de una jubilación plena y sin preocupaciones con Medicare. <br><br><br>
+                   </p>
+ 
+                   <a href="#" class="card__button rounded-full bg-[#003366] text-[#ffffcc] hover:bg-[#cc9933] hover:text-[#003366]">Mas Informacion</a>
+                </div>
+             </article>
+
+
+             <article class="card__article swiper-slide bg-white">
+              <div class="card__image">
+                 <img src="img/service3.jpg" alt="image" class="card__img">
+                 <div class="card__shadow"></div>
+              </div>
+
+              <div class="card__data  bg-[#ffffcc]">
+                 <h3 class="card__name fuente-acumin-cursiva text-[16px]">Seguros Medicos</h3>
+                 <p class="card__description leading-[16px] text-gray-700">
+                  Accede a la atención médica que necesitas sin preocuparte por los costos. Tu salud es lo primero, y nosotros lo entendemos. <br><br> 
+                 </p>
+
+                 <a href="#" class="card__button rounded-full bg-[#003366] text-[#ffffcc] hover:bg-[#cc9933] hover:text-[#003366]">Mas Informacion</a>
+              </div>
+           </article>
+
+           <article class="card__article swiper-slide bg-white">
+            <div class="card__image">
+               <img src="img/service4.jpg" alt="image" class="card__img">
+               <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data  bg-[#ffffcc]">
+               <h3 class="card__name fuente-acumin-cursiva text-[16px]">Seguros Dentales y de Visi&oacute;n</h3>
+               <p class="card__description leading-[16px] text-gray-700">
+                Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.
+               </p>
+
+               <a href="#" class="card__button rounded-full bg-[#003366] text-[#ffffcc] hover:bg-[#cc9933] hover:text-[#003366]">Mas Informacion</a>
+            </div>
+         </article>
+      
+
+       <article class="card__article swiper-slide bg-white">
+        <div class="card__image">
+           <img src="img/service5.jpg" alt="image" class="card__img">
+           <div class="card__shadow"></div>
+        </div>
+
+        <div class="card__data  bg-[#ffffcc]">
+           <h3 class="card__name fuente-acumin-cursiva text-[16px]">Seguro contra accidentes</h3>
+           <p class="card__description leading-[16px] text-gray-700">
+            Desde pequeños percances hasta eventos imprevistos, asegúrate de estar cubierto en cualquier situación. <br><br>
+           </p>
+
+           <a href="#" class="card__button rounded-full bg-[#003366] text-[#ffffcc] hover:bg-[#cc9933] hover:text-[#003366]">Mas Informacion</a>
+        </div>
+     </article>
+
+     <article class="card__article swiper-slide bg-white">
+      <div class="card__image">
+         <img src="img/service6.jpg" alt="image" class="card__img">
+         <div class="card__shadow"></div>
+      </div>
+
+      <div class="card__data  bg-[#ffffcc]">
+         <h3 class="card__name fuente-acumin-cursiva text-[16px]">Seguro de Vida</h3>
+         <p class="card__description leading-[16px] text-gray-700">
+          Protege a tus seres queridos y asegura su futuro. Obtén la tranquilidad de saber que tu legado está seguro. <br><br>
+         </p>
+
+         <a href="#" class="card__button rounded-full bg-[#003366] text-[#ffffcc] hover:bg-[#cc9933] hover:text-[#003366]">Mas Informacion</a>
+      </div>
+   </article>
+
+
+             
+                 
+              </div>
+           </div>
+  
+           <!-- Navigation buttons -->
+           <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line text-white"></i>
+           </div>
+           
+           <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line text-white"></i>
+           </div>
+  
+           <!-- Pagination -->
+           <div class="swiper-pagination"></div>
+        </div>
+     </section>
+    </div>
+  
+
+
+    <div class="flex flex-row place-content-center  items-center mt-[30px]">
+      
+      <span
+        class="flex flex-row place-content-center font-bold fuente-acumin text-5xl text-[#003366] animate__animated animate__fadeIn retraso"
+        >POR QU&Eacute; ELEGIR A</span
+      >
+      <img src="img/logoicono.png" width="150px" alt="">
+
+    </div>
+
+
+
+    <div class="body__page">
+      <div class="container__card">
+        <div class="card">
+          <div class="icon flex flex-col place-content-end">
+            <img src="img/porque1.jpg" class="rounded-[20px] relative" alt="">
+            <div class="absolute bg-[#003366] h-12 w-full text-center flex flex-col place-content-center rounded-b-[20px] text-white fuente-acumin-cursiva bg-opacity-75">Variedad de Opciones</div>
+          </div>
+          <div class="info__description texto-azul-oscuro">
+            <p>
+              Desde seguros médicos que cuidan de tu bienestar hasta coberturas dentales, visión, vida y contra accidentes, ofrecemos una amplia gama de opciones para adaptarse a tus necesidades únicas.
+            </p>
+            
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon flex flex-col place-content-end">
+            <img src="img/porque2.jpg" class="rounded-[20px] relative" alt="">
+            <div class="absolute bg-[#003366] h-12 w-full text-center flex flex-col place-content-center rounded-b-[20px] text-white fuente-acumin-cursiva bg-opacity-75">Facilidad y Rapidez</div>
+          </div>
+          <div class="info__description texto-azul-oscuro">
+            <p>
+              Olvídate de los procesos complicados. Nuestra plataforma hace que obtener seguros sea tan fácil como un clic. ¡Menos papeleo, más protección!
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="icon flex flex-col place-content-end">
+            <img src="img/porque3.jpg" class="rounded-[20px] relative" alt="">
+            <div class="absolute bg-[#003366] h-12 w-full text-center flex flex-col place-content-center rounded-b-[20px] text-white fuente-acumin-cursiva bg-opacity-75">Atenci&oacute;n Personalizada</div>
+          </div>
+          <div class="info__description texto-azul-oscuro">
+            <p>
+              Nuestro equipo está aquí para ti. Respondemos a tus preguntas, te guiamos en la elección del plan perfecto y te ofrecemos un servicio personalizado que marca la diferencia.
+            </p>
+           
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+
+
+
+    <div class="flex flex-row place-content-between items-center mt-[50px]">
+      <div class="fondo-dorado h-[23px] w-[20%] m-0"></div>
+      <span
+        class="flex flex-row place-content-center items-center quicksand-grueso text-2xl text-[#003366] mt-[-5px]"
+        ><p class="text-center texto-dorado">
+
+
+          Nos Especializamos en simplificar el proceso de obtener <br> seguros esenciales, ofreciendote tranquilidad y seguridad <br> para enfrentar cualquier eventualidad.
+
+          
+        </p></span
+      >
+      <div class="bg-[#cc9933] h-[23px] w-[20%] m-0"></div>
+    </div>
+    
+
+    <div
+      id="imagenfondo"
+      class="fondofranja w-full mt-[20px] bg-[#ffffcc]  h-[600px] flex flex-col"
+    >
+     <div class="flex flex-col justify-center items-center">
+      
+      <div class="m-4 flex flex-row justify-center place-content-center"></div>
+     </div>
+    </div>
+
+
+  </body>
+  <script src="js/function.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>
