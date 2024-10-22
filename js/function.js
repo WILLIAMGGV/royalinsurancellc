@@ -117,6 +117,8 @@ function cambiarefecto() {
     const element2 = document.getElementById("imagenfondo");
     const element3 = document.getElementById("titleslider");
     const element4 = document.getElementById("descripcionslider");
+    const element5 = document.getElementById("titleslider2");
+    const element6 = document.getElementById("descripcionslider2");
     element2.classList.remove("fondo1");
     element2.classList.add("fondo2");
     element2.classList.remove("animate__animated", "animate__fadeIn");
@@ -125,11 +127,17 @@ function cambiarefecto() {
     element3.classList.add("animate__animated", "animate__fadeIn");
     element4.classList.remove("animate__animated", "animate__backInUp");
     element4.classList.add("animate__animated", "animate__backInUp");
+    element5.classList.remove("animate__animated", "animate__fadeIn");
+    element5.classList.add("animate__animated", "animate__fadeIn");
+    element6.classList.remove("animate__animated", "animate__backInUp");
+    element6.classList.add("animate__animated", "animate__backInUp");
 
     setTimeout(() => {
       element2.classList.remove("animate__animated", "animate__fadeIn");
       element3.classList.remove("animate__animated", "animate__fadeIn");
       element4.classList.remove("animate__animated", "animate__backInUp");
+      element5.classList.remove("animate__animated", "animate__fadeIn");
+      element6.classList.remove("animate__animated", "animate__backInUp");
     }, 3000);
     cuenta = 1;
     return;
@@ -139,6 +147,8 @@ function cambiarefecto() {
     const element2 = document.getElementById("imagenfondo");
     const element3 = document.getElementById("titleslider");
     const element4 = document.getElementById("descripcionslider");
+    const element5 = document.getElementById("titleslider2");
+    const element6 = document.getElementById("descripcionslider2");
     element2.classList.remove("fondo2");
     element2.classList.add("fondo3");
     element2.classList.remove("animate__animated", "animate__fadeIn");
@@ -147,11 +157,17 @@ function cambiarefecto() {
     element3.classList.add("animate__animated", "animate__fadeIn");
     element4.classList.remove("animate__animated", "animate__backInUp");
     element4.classList.add("animate__animated", "animate__backInUp");
+    element5.classList.remove("animate__animated", "animate__fadeIn");
+    element5.classList.add("animate__animated", "animate__fadeIn");
+    element6.classList.remove("animate__animated", "animate__backInUp");
+    element6.classList.add("animate__animated", "animate__backInUp");
 
     setTimeout(() => {
       element2.classList.remove("animate__animated", "animate__fadeIn");
       element3.classList.remove("animate__animated", "animate__fadeIn");
       element4.classList.remove("animate__animated", "animate__backInUp");
+      element5.classList.remove("animate__animated", "animate__fadeIn");
+      element6.classList.remove("animate__animated", "animate__backInUp");
     }, 3000);
     cuenta = 2;
     return;
@@ -161,6 +177,8 @@ function cambiarefecto() {
     const element2 = document.getElementById("imagenfondo");
     const element3 = document.getElementById("titleslider");
     const element4 = document.getElementById("descripcionslider");
+    const element5 = document.getElementById("titleslider2");
+    const element6 = document.getElementById("descripcionslider2");
     element2.classList.remove("fondo3");
     element2.classList.add("fondo4");
     element2.classList.remove("animate__animated", "animate__fadeIn");
@@ -169,11 +187,17 @@ function cambiarefecto() {
     element3.classList.add("animate__animated", "animate__fadeIn");
     element4.classList.remove("animate__animated", "animate__backInUp");
     element4.classList.add("animate__animated", "animate__backInUp");
+    element5.classList.remove("animate__animated", "animate__fadeIn");
+    element5.classList.add("animate__animated", "animate__fadeIn");
+    element6.classList.remove("animate__animated", "animate__backInUp");
+    element6.classList.add("animate__animated", "animate__backInUp");
 
     setTimeout(() => {
       element2.classList.remove("animate__animated", "animate__fadeIn");
       element3.classList.remove("animate__animated", "animate__fadeIn");
       element4.classList.remove("animate__animated", "animate__backInUp");
+      element5.classList.remove("animate__animated", "animate__fadeIn");
+      element6.classList.remove("animate__animated", "animate__backInUp");
     }, 3000);
     cuenta = 3;
     return;
@@ -183,6 +207,8 @@ function cambiarefecto() {
     const element2 = document.getElementById("imagenfondo");
     const element3 = document.getElementById("titleslider");
     const element4 = document.getElementById("descripcionslider");
+    const element5 = document.getElementById("titleslider2");
+    const element6 = document.getElementById("descripcionslider2");
     element2.classList.remove("fondo4");
     element2.classList.add("fondo1");
     element2.classList.remove("animate__animated", "animate__fadeIn");
@@ -191,11 +217,17 @@ function cambiarefecto() {
     element3.classList.add("animate__animated", "animate__fadeIn");
     element4.classList.remove("animate__animated", "animate__backInUp");
     element4.classList.add("animate__animated", "animate__backInUp");
+    element5.classList.remove("animate__animated", "animate__fadeIn");
+    element5.classList.add("animate__animated", "animate__fadeIn");
+    element6.classList.remove("animate__animated", "animate__backInUp");
+    element6.classList.add("animate__animated", "animate__backInUp");
 
     setTimeout(() => {
       element2.classList.remove("animate__animated", "animate__fadeIn");
       element3.classList.remove("animate__animated", "animate__fadeIn");
       element4.classList.remove("animate__animated", "animate__backInUp");
+      element5.classList.remove("animate__animated", "animate__fadeIn");
+      element6.classList.remove("animate__animated", "animate__backInUp");
     }, 3000);
     cuenta = 0;
     return;

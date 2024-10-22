@@ -338,6 +338,55 @@
   margin: 63px 0 0 505px;
 }
 
+/* BURBUJA DE DIALOGO */
+#speech-bubblemobile {
+  width: 360px;
+  height: 210px;
+  background: #003366;
+
+  left: 100px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+}
+
+#speech-bubblemobile:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 26px solid #003366;
+  border-bottom: 13px solid transparent;
+  margin: 63px 0 0 340px;
+}
+
+#speech-bubblemobile2 {
+  width: 360px;
+  height: 210px;
+  background: #003366;
+
+  left: 100px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+}
+
+#speech-bubblemobile2:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 26px solid #003366;
+  border-bottom: 13px solid transparent;
+  margin: 63px 0 0 340px;
+}
+
 #speech-bubble2 {
   width: 520px;
   height: 170px;

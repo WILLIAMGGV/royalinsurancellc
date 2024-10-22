@@ -29,8 +29,16 @@
       rel="stylesheet"
     />
 
-  <script src="php/function.js"></script>
+  <script src="php/function3.js"></script>
 
+  <!--=============== REMIXICONS ===============-->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+<!--=============== CSS ===============-->
+<link rel="stylesheet" href="assets2/css/styles.css" />
 
     <link rel="stylesheet" href="style/estilos.css" />
     <link rel="stylesheet" href="style/estilos2.css">
@@ -53,10 +61,161 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </head>
   <body>
+
+
+    <!-- HEADER MENU MOBILE TABLET -->
+
+
+    <header class="header block sm:block md:block lg:hidden xl:hidden 2xl:hidden">
+      <nav class="nav container2">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="img/logo.png" width="120px" alt="" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Inicio</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Nuestros Servicios<i
+                  class="ri-arrow-down-s-line dropdown__arrow"
+                ></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-checkbox-circle-fill"></i> OBAMACARE
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-checkbox-circle-fill"></i> MEDICARE
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-checkbox-circle-fill"></i> PLANES DE SEGURO
+                    DENTAL Y VISIÓN
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-checkbox-circle-fill"></i> PÓLIZAS DE VIDA
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-checkbox-circle-fill"></i> PÓLIZAS ACCIDENTALES
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-checkbox-circle-fill"></i> PLANES DE DESCUENTO
+                    PARA INDOCUMENTADOS
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-checkbox-circle-fill"></i> PÓLIZAS DE AUTO
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-checkbox-circle-fill"></i> PÓLIZAS DE HOME
+                  </a>
+                </li>
+
+                <!-- <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i> Reports
+                    <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Documents
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Payments
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-refund-2-line"></i> Refunds
+                      </a>
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+            </li>
+
+            <li><a href="#" class="nav__link">Testimonios</a></li>
+
+            <li><a href="#" class="nav__link">Acerca de Mi</a></li>
+
+            <li><a href="#" class="nav__link">Contact</a></li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Nuestras Redes<i
+                  class="ri-arrow-down-s-line dropdown__arrow"
+                ></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-facebook-circle-fill"></i> FACEBOOK
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-instagram-fill"></i> INSTAGRAM
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-whatsapp-fill"></i> WHATSAPP
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
     <!-- CONTENEDOR SLIDER -->
 
     <!-- FIN DE CONTENEDOR SLIDER -->
 
+    <div class="hidden sm:hidden md:hidden lg:block xl:block 2xl:block">
     <div class="fondo-azul-oscuro h-[33px] m-0"></div>
 
     <div class="flex flex-row place-content-between">
@@ -211,14 +370,14 @@
         </div>
       </div>
     </div>
-
+  </div>
     <div
       id="imagenfondo"
-      class="fondo1 w-full border-t-2 h-[600px] flex flex-col"
+      class="fondo1 w-full border-t-2 h-[400px] sm:h-[400px] md:h-[400px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] flex flex-col"
     >
       <div
         id="titleslider"
-        class="ml-[-50%] flex flex-col mt-[50px] animate__animated animate__fadeIn retraso"
+        class="hidden sm:hidden md:hidden lg:block xl:block 2xl:block ml-[-50%] flex flex-col mt-[50px] animate__animated animate__fadeIn retraso"
       >
         <span
           class="text-white bg-[#003366] flex flex-col ml-4 p-4 text-xl md:text-4xl fuente-acumin bg-opacity-30 rounded-md"
@@ -243,15 +402,44 @@
           >
         </div>
       </div>
+
+
+      <div
+        id="titleslider2"
+        class="block sm:block md:block lg:hidden xl:hidden 2xl:hidden flex flex-col place-content-end animate__animated animate__fadeIn retraso"
+      ><br><br><br><br><br><br><br><br>
+        <span
+          class="text-white bg-[#003366] flex flex-col  p-4 text-xl text-xl fuente-acumin bg-opacity-30 rounded-md"
+        >
+          <span>OBAMACARE PARA TI Y TU FAMILIA</span>
+          <p
+            id="descripcionslider2"
+            class="text-sm quicksand-medio text-center justify-center animate__animated animate__backInUp retraso2"
+          >
+            ¡No esperes más! Obtén Cobertura de Salud Asequible Ahora con
+            Obamacare
+          </p>
+        </span>
+        <div
+          id="botonc2"
+          class="flex flex-row place-content-end"
+         
+        >
+          <span
+            class="mt-[20px] bg-[#000] p-2 rounded-lg text-sm bg-opacity-70 text-white hover:font-bold cursor-pointer hover:text-gray-900 hover:bg-[#cc9933]"
+            >Mas Informaci&oacute;n</span
+          >
+        </div>
+      </div>
     </div>
 
     <div class="flex flex-row place-content-between  items-center mt-[50px]">
-      <div class="fondo-dorado h-[23px] w-[20%] m-0"></div>
+      <div class="fondo-dorado h-[23px] w-[10%] sm:w-[10%] md:w-[10%] lg:w-[20%] xl:w-[20%] 2xl:w-[20%] m-0"></div>
       <span
-        class="flex flex-row place-content-center font-bold fuente-acumin text-5xl text-[#003366] animate__animated animate__fadeIn retraso"
+        class="flex flex-row place-content-center font-bold fuente-acumin text-xl sm:text-xl md:text-xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-[#003366] animate__animated animate__fadeIn retraso"
         >COMPA&Nacute;IAS DE SEGUROS</span
       >
-      <div class="bg-[#cc9933] h-[23px] w-[20%] m-0"></div>
+      <div class="bg-[#cc9933] h-[23px] w-[10%] sm:w-[10%] md:w-[10%] lg:w-[20%] xl:w-[20%] 2xl:w-[20%] m-0"></div>
     </div>
 
     <div class="logos">
@@ -278,9 +466,9 @@
     </div>
 
     <div class="flex flex-row place-content-between items-center mt-[50px]">
-      <div class="fondo-dorado h-[23px] w-[20%] m-0"></div>
+      <div class="fondo-dorado h-[23px] xl:w-[20%] lg:w-[20%] sm:w-[8%] md:w-[8%] 2xl:w-[20%] w-[8%] m-0"></div>
       <span
-        class="flex flex-row place-content-center items-center quicksand-grueso text-2xl text-[#003366] mt-[-5px]"
+        class="flex flex-row place-content-center items-center quicksand-grueso text-[11px] sm:text-sm md:text-md lg:text-2xl xl:text-2xl 2xl:text-2xl text-[#003366] mt-[-5px]"
         ><p class="text-center">
           <span class="texto-dorado">En</span> ROYAL INSURANCE USA LLC,<br /><span
             class="texto-dorado"
@@ -292,15 +480,15 @@
           >y proteger lo que más valoras.
         </p></span
       >
-      <div class="bg-[#cc9933] h-[23px] w-[20%] m-0"></div>
+      <div class="bg-[#cc9933] h-[23px] xl:w-[20%] lg:w-[20%] sm:w-[8%] md:w-[8%] 2xl:w-[20%] w-[8%] m-0"></div>
     </div>
 
     <div
       id="imagenfondo"
-      class="fondoraya w-full mt-[20px]  h-[600px] flex flex-col"
+      class="fondoraya w-full mt-[50px]  h-[400px] sm:h-[600px] md:h-[600px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] flex flex-col"
     >
      <div class="flex flex-col justify-center items-center">
-      <div class="text-5xl fuente-acumin mt-[50px] font-bold texto-azul-oscuro">ESTADOS EN EL QUE TENEMOS ATENCI&Oacute;N</div>
+      <div class="text-md sm:text-sm md:text-md lg:text-5xl xl:text-5xl 2xl:text-5xl fuente-acumin mt-[50px]  font-bold texto-azul-oscuro">ESTADOS EN EL QUE TENEMOS ATENCI&Oacute;N</div>
       <div class="m-4 flex flex-row justify-center place-content-center"><img src="img/mapa.png" width="750px" height="750px" alt=""></div>
      </div>
     </div>
@@ -439,10 +627,10 @@
     <div class="flex flex-row place-content-center  items-center mt-[30px]">
       
       <span
-        class="flex flex-row place-content-center font-bold fuente-acumin text-5xl text-[#003366] animate__animated animate__fadeIn retraso"
+        class="flex flex-row place-content-center font-bold fuente-acumin text-xl sm:text-xl md:text-xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-[#003366] animate__animated animate__fadeIn retraso"
         >POR QU&Eacute; ELEGIR A</span
       >
-      <img src="img/logoicono.png" width="150px" alt="">
+      <img src="img/logoicono.png" width="150px" class="w-[70px] sm:w-[70px] md:w-[70px] lg:w-[150px] xl:w-[150px] 2xl:w-[150px]" alt="">
 
     </div>
 
@@ -498,9 +686,9 @@
 
 
     <div class="flex flex-row place-content-between items-center mt-[50px]">
-      <div class="fondo-dorado h-[23px] w-[20%] m-0"></div>
+      <div class="fondo-dorado h-[23px] xl:w-[20%] lg:w-[20%] sm:w-[8%] md:w-[8%] 2xl:w-[20%] w-[8%] m-0"></div>
       <span
-        class="flex flex-row place-content-center items-center quicksand-grueso text-2xl text-[#003366] mt-[-5px]"
+        class="flex flex-row place-content-center items-center quicksand-grueso text-[11px] sm:text-sm md:text-md lg:text-xl xl:text-xl 2xl:text-xl text-[#003366] mt-[-5px]"
         ><p class="text-center texto-dorado">
 
 
@@ -509,11 +697,11 @@
           
         </p></span
       >
-      <div class="bg-[#cc9933] h-[23px] w-[20%] m-0"></div>
+      <div class="bg-[#cc9933] h-[23px] xl:w-[20%] lg:w-[20%] sm:w-[8%] md:w-[8%] 2xl:w-[20%] w-[8%] m-0"></div>
     </div>
     
 
-    <div class="text-5xl text-center fuente-acumin mt-[50px] font-bold texto-azul-oscuro">TESTIMONIALES</div>
+    <div class="text-xl sm:text-xl md:text-xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-center fuente-acumin mt-[50px] font-bold texto-azul-oscuro">TESTIMONIALES</div>
       
 <br><br>
     <div class="body_testimonial">
@@ -631,19 +819,19 @@
     <div class="flex flex-row place-content-between  items-center mt-[50px]">
       <div class="fondo-dorado h-[23px] w-[20%] m-0"></div>
       <span
-        class="flex flex-row place-content-center font-bold fuente-acumin text-5xl text-[#003366] animate__animated animate__fadeIn retraso"
+        class="flex flex-row place-content-center font-bold fuente-acumin text-xl sm:text-xl md:text-xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-[#003366] animate__animated animate__fadeIn retraso"
         >ACERCA DE MI</span
       >
       <div class="bg-[#cc9933] h-[23px] w-[20%] m-0"></div>
     </div>
 
 
-    <div class="flex flex-row   place-content-center pt-16">
+    <div class=" flex flex-row place-content-center pt-16">
 
-      <div class=" flex flex-col mr-14">
-        <div id="speech-bubble" >
-          ¡Hola! Soy <span class="font-bold">Carmen Nieto, Especialista de seguros</span><br>En mi tiempo como Especialista de seguros en <span class="texto-dorado font-bold">Royal Insurance</span>, me he enfocado en ofrecerle a mis clientes <span class="font-bold">la mejor asesoria</span> para que puedan obtener el <span class="font-bold">plan ideal adaptado a sus necesidades</span>, ya sean <span class="font-bold">medicas, comerciales o personales</span>. Mi objetivo es que se sientan <span class="texto-dorado font-bold">protegidos de forma integral</span> ante cualquier evento que pueda afectar su salud, su negocio a sus finanzas.</div>
-      <br>
+      <div class=" flex flex-col mr-14 hidden sm:block">
+        <div id="speech-bubble">
+          ¡Hola! Soy <span class="font-bold">Carmen Nieto, Especialista de seguros</span><br>En mi tiempo como Especialista de seguros en <span class="texto-dorado font-bold">Royal Insurance</span>, me he enfocado en ofrecerle a mis clientes <span class="font-bold">la mejor asesoria</span> para que puedan obtener el <span class="font-bold">plan ideal adaptado a sus necesidades</span>, ya sean <span class="font-bold">medicas, comerciales o personales</span>. Mi objetivo es que se sientan <span class="texto-dorado font-bold">protegidos de forma integral</span> ante cualquier evento que pueda afectar su salud, su negocio o sus finanzas.</div>
+           <br>
           <div id="speech-bubble2" >
             Trabajo en función de que cada uno de mis clientes se sienta feliz y protegido , brindándole <span class="texto-dorado font-bold">un servicio de calidad , eficiente y oportuno.</span> <br>Me siento con el gran compromiso de siempre hablarles con la verdad y con la mejor información para que se sientan protegidos. <br><span class="text-[18px] font-bold mt-[10px]">Carmen Nieto</span>
           
@@ -652,9 +840,11 @@
       
         </div>
     
-      <div><img class="rounded-lg" src="img/carmen.jpg" alt=""></div>
+      <div class="hidden sm:block"><img class="rounded-lg" src="img/carmen.jpg" alt=""></div>
     </div>
-   
+
+
+
 
 
     <div class="flex flex-row place-content-between items-center mt-[50px] fondoraya">
@@ -669,12 +859,12 @@
     </div>
 
 <!-- COMIENZO DEL FORMULARIO -->
-    <div class="p-4">
+    <div class="p-1 sm:p-1 md:p-1 lg:p-4 xl:p-4 2xl:p-4">
       <div class="flex flex-row place-content-center">
-        <span class="text-4xl mt-8 font-medium fuente-acumin-bold font-bold texto-azul-oscuro">CONTACTO</span>
+        <span class="text-xl sm:text-xl md:text-xl lg:text-4xl xl:text-4xl 2xl:text-4xl mt-8 font-medium fuente-acumin-bold font-bold texto-azul-oscuro">CONTACTO</span>
       </div>
       <div class="m-6 text-sm">
-        <span class="quicksand-grueso text-lg texto-dorado">
+        <span class="quicksand-grueso text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg texto-dorado">
           En <span class="quicksand-grueso font-bold texto-azul-oscuro">ROYAL INSURANCE</span>, creemos en brindar acceso fácil y asequible
           a la protección que mereces. Explora nuestros servicios y descubre cómo
           podemos ayudarte a construir un futuro más seguro.
@@ -687,7 +877,7 @@
           <div>
             <label
               for="royal_name"
-              class="block mb-2 text-lg texto-dorado font-bold"
+              class="block mb-2 text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg  texto-dorado font-bold"
               >First Name</label
             >
             <div class="relative mb-6">
@@ -723,7 +913,7 @@
           <div>
             <label
               for="royal_lastname"
-              class="block mb-2 text-lg texto-dorado font-bold"
+              class="block mb-2 text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg  texto-dorado font-bold"
               >Last name</label
             >
             <div class="relative mb-6">
@@ -761,7 +951,7 @@
           <div>
             <label
               for="royal_phone"
-              class="block mb-2 text-lg texto-dorado font-bold"
+              class="block mb-2 text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg  texto-dorado font-bold"
               >Phone</label
             >
             <div class="relative mb-6">
@@ -795,7 +985,7 @@
           <div>
             <label
               for="royal_mail"
-              class="block mb-2 text-lg texto-dorado font-bold"
+              class="block mb-2 text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg  texto-dorado font-bold"
               >Email</label
             >
             <div class="relative mb-6">
@@ -836,7 +1026,7 @@
                 <div>
                   <label
                     for="royal_zipcode"
-                    class="block mb-2 text-lg texto-dorado font-bold"
+                    class="block mb-2 text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg  texto-dorado font-bold"
                     >Zip Code</label
                   >
                   <div class="relative mb-6">
@@ -899,7 +1089,7 @@
   
         <div>
           <div class="flex flex-col">
-            <label class="text-lg texto-dorado font-medium">Servicios</label>
+            <label class="text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg  texto-dorado font-bold">Servicios</label>
             <div class="flex flex-row pt-2">
               <div>
                 <input
@@ -908,7 +1098,7 @@
                   value=""
                   class="w-4 h-4 mt-0 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label for="checked-salud" class="text-sm pl-1 texto-dorado font-bold"
+                <label for="checked-salud" class="text-[11px] sm:text-[11px] md:text-[11px] lg:text-lg xl:text-lg 2xl:text-lg  pl-1 texto-dorado font-bold"
                   >Salud</label
                 >
               </div>
@@ -919,7 +1109,7 @@
                   value=""
                   class="w-4 h-4 mt-0 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label for="checked-carro" class="text-sm pl-1  texto-dorado font-bold"
+                <label for="checked-carro" class="text-[11px] sm:text-[11px] md:text-[11px] lg:text-lg xl:text-lg 2xl:text-lg pl-1  texto-dorado font-bold"
                   >Vehiculo</label
                 >
               </div>
@@ -930,7 +1120,7 @@
                   value=""
                   class="w-4 h-4 mt-0 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label for="checked-dental" class="text-sm pl-1  texto-dorado font-bold"
+                <label for="checked-dental" class="text-[11px] sm:text-[11px] md:text-[11px] lg:text-lg xl:text-lg 2xl:text-lg pl-1  texto-dorado font-bold"
                   >Dental</label
                 >
               </div>
@@ -942,7 +1132,7 @@
                   value=""
                   class="w-4 h-4 mt-0 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label for="checked-accidental" class="text-sm pl-1  texto-dorado font-bold"
+                <label for="checked-accidental" class="text-[11px] sm:text-[11px] md:text-[11px] lg:text-lg xl:text-lg 2xl:text-lg pl-1  texto-dorado font-bold"
                   >Accidental</label
                 >
               </div>
@@ -954,7 +1144,7 @@
           <div>
             <label
               for="message"
-              class="block text-lg texto-dorado mt-2 font-bold"
+              class="block text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg texto-dorado mt-2 font-bold"
               >Comentario</label
             >
             <textarea
@@ -966,7 +1156,7 @@
           </div>
         </div>
       </div>
-      <div class="m-6 text-lg texto-dorado font-bold quicksand-grueso">
+      <div class="m-6 text-sm sm:text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-lg texto-dorado font-bold quicksand-grueso">
         <span>
           <strong class="texto-azul-oscuro ">Nota:</strong>
           Estamos comprometidos a proteger y respetar su privacidad. Solo usaremos
@@ -983,7 +1173,7 @@
           value=""
           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
         />
-        <label for="link-checkbox" class="ms-2 text-md font-bold texto-azul-oscuro quicksand-medio"
+        <label for="link-checkbox" class="ms-2 text-[11px] sm:text-[11px] md:text-[11px] lg:text-lg xl:text-lg 2xl:text-lg font-bold texto-azul-oscuro quicksand-medio"
           >Entiendo y acepto que mi información será almacenada de forma segura y
           que pueda recibir comunicaciones relacionadas con los servicios
           seleccionados.</label
@@ -1013,7 +1203,7 @@
               />
             </svg>
   
-            <span class="pl-2 text-[20px]">Enviar Solicitud</span>
+            <span class="pl-2 text-sm sm:text-sm md:text-sm lg:text-[20px] xl:text-[20px] 2xl:text-[20px]">Enviar Solicitud</span>
           </span>
         </button>
         <span id="error"></span>
@@ -1021,12 +1211,12 @@
     </div>
 
 
-    <div class="h-16 bg-[#003366]">&nbsp;</div>
+    <div class="h-16 bg-[#003366] text-white flex flex-row place-content-center">&nbsp; pie de pagina</div>
 
   </body>
   <script src="js/function.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="assets2/js/main.js"></script>
 
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
