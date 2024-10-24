@@ -41,7 +41,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
 }
 
 .card__container {
@@ -55,7 +55,7 @@ img {
 }
 
 .card__article {
-  width: 300px; /* Remove after adding swiper js */
+  width: 300px;
   border-radius: 1.25rem;
   overflow: hidden;
 }

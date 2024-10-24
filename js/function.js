@@ -25,7 +25,7 @@ menu1.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "OBAMACARE";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "12121Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
 });
 
 const menu2 = document.getElementById("menu2");
@@ -34,7 +34,7 @@ menu2.addEventListener("mouseover", function () {
   const imgService = document.getElementById("imgservice");
   imgService.src = "/img/service2.jpg";
   const titlesubmenu = document.getElementById("titlesubmenu");
-  titlesubmenu.innerHTML = "P&Oacute;LIZAS PRIVADAS";
+  titlesubmenu.innerHTML = "MEDICARE";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
     "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
@@ -49,7 +49,7 @@ menu3.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "PLANES DE SEGURO DENTAL Y VISI&Oacute;N";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "222Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
 });
 
 const menu4 = document.getElementById("menu4");
@@ -109,7 +109,7 @@ menu8.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "P&Oacute;LIZAS DE HOME";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "31212Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
 });
 
 function cambiarefecto() {
@@ -121,24 +121,8 @@ function cambiarefecto() {
     const element6 = document.getElementById("descripcionslider2");
     element2.classList.remove("fondo1");
     element2.classList.add("fondo2");
-    element2.classList.remove("animate__animated", "animate__fadeIn");
-    element2.classList.add("animate__animated", "animate__fadeIn");
-    element3.classList.remove("animate__animated", "animate__fadeIn");
-    element3.classList.add("animate__animated", "animate__fadeIn");
-    element4.classList.remove("animate__animated", "animate__backInUp");
-    element4.classList.add("animate__animated", "animate__backInUp");
-    element5.classList.remove("animate__animated", "animate__fadeIn");
-    element5.classList.add("animate__animated", "animate__fadeIn");
-    element6.classList.remove("animate__animated", "animate__backInUp");
-    element6.classList.add("animate__animated", "animate__backInUp");
 
-    setTimeout(() => {
-      element2.classList.remove("animate__animated", "animate__fadeIn");
-      element3.classList.remove("animate__animated", "animate__fadeIn");
-      element4.classList.remove("animate__animated", "animate__backInUp");
-      element5.classList.remove("animate__animated", "animate__fadeIn");
-      element6.classList.remove("animate__animated", "animate__backInUp");
-    }, 3000);
+    setTimeout(() => {}, 3000);
     cuenta = 1;
     return;
   }
@@ -151,24 +135,8 @@ function cambiarefecto() {
     const element6 = document.getElementById("descripcionslider2");
     element2.classList.remove("fondo2");
     element2.classList.add("fondo3");
-    element2.classList.remove("animate__animated", "animate__fadeIn");
-    element2.classList.add("animate__animated", "animate__fadeIn");
-    element3.classList.remove("animate__animated", "animate__fadeIn");
-    element3.classList.add("animate__animated", "animate__fadeIn");
-    element4.classList.remove("animate__animated", "animate__backInUp");
-    element4.classList.add("animate__animated", "animate__backInUp");
-    element5.classList.remove("animate__animated", "animate__fadeIn");
-    element5.classList.add("animate__animated", "animate__fadeIn");
-    element6.classList.remove("animate__animated", "animate__backInUp");
-    element6.classList.add("animate__animated", "animate__backInUp");
 
-    setTimeout(() => {
-      element2.classList.remove("animate__animated", "animate__fadeIn");
-      element3.classList.remove("animate__animated", "animate__fadeIn");
-      element4.classList.remove("animate__animated", "animate__backInUp");
-      element5.classList.remove("animate__animated", "animate__fadeIn");
-      element6.classList.remove("animate__animated", "animate__backInUp");
-    }, 3000);
+    setTimeout(() => {}, 3000);
     cuenta = 2;
     return;
   }
@@ -181,24 +149,8 @@ function cambiarefecto() {
     const element6 = document.getElementById("descripcionslider2");
     element2.classList.remove("fondo3");
     element2.classList.add("fondo4");
-    element2.classList.remove("animate__animated", "animate__fadeIn");
-    element2.classList.add("animate__animated", "animate__fadeIn");
-    element3.classList.remove("animate__animated", "animate__fadeIn");
-    element3.classList.add("animate__animated", "animate__fadeIn");
-    element4.classList.remove("animate__animated", "animate__backInUp");
-    element4.classList.add("animate__animated", "animate__backInUp");
-    element5.classList.remove("animate__animated", "animate__fadeIn");
-    element5.classList.add("animate__animated", "animate__fadeIn");
-    element6.classList.remove("animate__animated", "animate__backInUp");
-    element6.classList.add("animate__animated", "animate__backInUp");
 
-    setTimeout(() => {
-      element2.classList.remove("animate__animated", "animate__fadeIn");
-      element3.classList.remove("animate__animated", "animate__fadeIn");
-      element4.classList.remove("animate__animated", "animate__backInUp");
-      element5.classList.remove("animate__animated", "animate__fadeIn");
-      element6.classList.remove("animate__animated", "animate__backInUp");
-    }, 3000);
+    setTimeout(() => {}, 3000);
     cuenta = 3;
     return;
   }
@@ -211,24 +163,8 @@ function cambiarefecto() {
     const element6 = document.getElementById("descripcionslider2");
     element2.classList.remove("fondo4");
     element2.classList.add("fondo1");
-    element2.classList.remove("animate__animated", "animate__fadeIn");
-    element2.classList.add("animate__animated", "animate__fadeIn");
-    element3.classList.remove("animate__animated", "animate__fadeIn");
-    element3.classList.add("animate__animated", "animate__fadeIn");
-    element4.classList.remove("animate__animated", "animate__backInUp");
-    element4.classList.add("animate__animated", "animate__backInUp");
-    element5.classList.remove("animate__animated", "animate__fadeIn");
-    element5.classList.add("animate__animated", "animate__fadeIn");
-    element6.classList.remove("animate__animated", "animate__backInUp");
-    element6.classList.add("animate__animated", "animate__backInUp");
 
-    setTimeout(() => {
-      element2.classList.remove("animate__animated", "animate__fadeIn");
-      element3.classList.remove("animate__animated", "animate__fadeIn");
-      element4.classList.remove("animate__animated", "animate__backInUp");
-      element5.classList.remove("animate__animated", "animate__fadeIn");
-      element6.classList.remove("animate__animated", "animate__backInUp");
-    }, 3000);
+    setTimeout(() => {}, 3000);
     cuenta = 0;
     return;
   }
@@ -243,3 +179,7 @@ let intervalId = setInterval(() => {
     clearInterval(intervalId);
   }
 }, 10000);
+
+function instagram() {
+  window.open("https://instagram.com/01.asistentevirtual", "_blank");
+}
