@@ -1,6 +1,7 @@
 const menuServiceDiv = document.getElementById("menuservice");
 
 var cuenta = 0;
+var foto = 0;
 
 menuServiceDiv.addEventListener("mouseover", function () {
   console.log("El mouse está sobre el div de servicios");
@@ -170,10 +171,104 @@ function cambiarefecto() {
   }
 }
 
+function cambiarefecto2() {
+  if (foto == 0) {
+    const elementfoto = document.getElementById("imagencarmen");
+    elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto.src = "img/carmen/carmen22.jpeg";
+    const elementfoto2 = document.getElementById("imagencarmen2");
+    elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto2.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto2.src = "img/carmen/carmen22.jpeg";
+
+    setTimeout(() => {
+      elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+      elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    }, 3000);
+
+    foto = 1;
+    return;
+  }
+
+  if (foto == 1) {
+    const elementfoto = document.getElementById("imagencarmen");
+    elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto.src = "img/carmen/carmen33.jpeg";
+    const elementfoto2 = document.getElementById("imagencarmen2");
+    elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto2.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto2.src = "img/carmen/carmen33.jpeg";
+
+    setTimeout(() => {
+      elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+      elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    }, 3000);
+    foto = 2;
+    return;
+  }
+
+  if (foto == 2) {
+    const elementfoto = document.getElementById("imagencarmen");
+    elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto.src = "img/carmen/carmen44.jpeg";
+    const elementfoto2 = document.getElementById("imagencarmen2");
+    elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto2.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto2.src = "img/carmen/carmen44.jpeg";
+
+    setTimeout(() => {
+      elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+      elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    }, 3000);
+    foto = 3;
+    return;
+  }
+
+  if (foto == 3) {
+    const elementfoto = document.getElementById("imagencarmen");
+    elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto.src = "img/carmen/carmen55.jpeg";
+    const elementfoto2 = document.getElementById("imagencarmen2");
+    elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto2.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto2.src = "img/carmen/carmen55.jpeg";
+
+    setTimeout(() => {
+      elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+      elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    }, 3000);
+    foto = 4;
+    return;
+  }
+
+  if (foto == 4) {
+    const elementfoto = document.getElementById("imagencarmen");
+    elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto.src = "img/carmen/carmen11.jpeg";
+    const elementfoto2 = document.getElementById("imagencarmen2");
+    elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    elementfoto2.classList.add("animate__animated", "animate__fadeIn");
+    elementfoto2.src = "img/carmen/carmen11.jpeg";
+
+    setTimeout(() => {
+      elementfoto.classList.remove("animate__animated", "animate__fadeIn");
+      elementfoto2.classList.remove("animate__animated", "animate__fadeIn");
+    }, 3000);
+    foto = 0;
+    return;
+  }
+}
+
 let contador = 0;
-let maxEjecuciones = 25; // Ejecutar 5 veces
+let maxEjecuciones = 100; // Ejecutar 5 veces
 let intervalId = setInterval(() => {
   cambiarefecto();
+  cambiarefecto2();
   contador++;
   if (contador >= maxEjecuciones) {
     clearInterval(intervalId);

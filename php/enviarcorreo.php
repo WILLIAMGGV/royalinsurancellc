@@ -6,17 +6,17 @@ require 'librerias/SMTP.php';
 
 function limpiar($String)
 {
-    $String = str_replace(array('[', '^', '´', '`', '¨', '~', ']', '<', '>', '*', '·', '--', '%'), "", $String);
-    $String = str_replace("'", '"', $String);
-    $String = str_replace("/", "-", $String);
-    $String = str_replace(".", "", $String);
-    return $String;
+  $String = str_replace(array('[', '^', '´', '`', '¨', '~', ']', '<', '>', '*', '·', '--', '%'), "", $String);
+  $String = str_replace("'", '"', $String);
+  $String = str_replace("/", "-", $String);
+  $String = str_replace(".", "", $String);
+  return $String;
 }
 
 // Enviamos por email la solicitud de condonación
 $remite_nombre = "Royal Insurance LLC"; // Tu nombre o el de tu página
 $remite_email = "info@royalinsurancellc.com"; // tu correo
-$para = strtolower('william.gv@asistentevirtualsas.com');
+$para = strtolower('bingoarcoiris@gmail.com');
 //$para = strtolower($_POST['contactemail']);
 $asunto = ("Solicitud de Cita");
 $info = "TEXTO";
@@ -53,7 +53,7 @@ $mensaje = "<div align='center'><img src='https://okeyseguro.com/images/logo-oke
             <td style='padding: 5px 5px 5px 10px;'><strong>Eres agente con licencia?:</strong> " . (($info)) . "</td>
           </tr>
           <tr>
-            <td style='padding: 5px 5px 5px 10px;'><strong>Cuando estas disponible para comenzar?:</strong> " . (($info)) . "</td>
+            <td style='padding: 5px 5px 5px 10px;'><strong>HOLAAACuando estas disponible para comenzar?:</strong> " . (($info)) . "</td>
           </tr>
           <tr>
             <td style='padding: 5px 5px 5px 10px;'><strong>Como oiste de nosotros?:</strong> " . limpiar(($info)) . "</td>
@@ -76,34 +76,36 @@ $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPT
 $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 //$mail->SMTPKeepAlive = true;  
 $mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-    )
+  'ssl' => array(
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true
+  )
 );
 
 //Recipients
 $mail->setFrom($remite_email, utf8_decode($remite_nombre));
 
-//Agregar destinatario
-strtolower("info@royalinsurancellc.com") . " " . $mail->addAddress("info@royalinsurancellc.com");
 
 //Agregar destinatario
+$arraycorreos = ['williamggv@gmail.com', 'enmarycarrasco@gmail.com', 'bingoarcoiris@gmail.com', 'william.gv@asistentevirtualsas.com'];
+
+
+
+
 $mail->addAddress($para);
-$mail->addAddress("info@okeyseguro.com");
 $mail->Subject = $asunto;
 $mail->IsHTML(true);
 $mail->Body = $mensaje;
 
 //Avisar si fue enviado o no y dirigir al index		
 if (!$mail->Send()) {
-    $mail->addAddress("williamggv@gmail.com");
-    if (!$mail->Send()) {
-    }
+  $mail->addAddress("williamggv@gmail.com");
+  if (!$mail->Send()) {
+  }
 
-    echo "Error/" . mysqli_error($mysqli);
+  echo "Error/" . mysqli_error($mysqli);
 } else {
-    mysqli_commit($mysqli); //mysqli_query("COMMIT");
-    echo "OK/" . $info;
+  mysqli_commit($mysqli); //mysqli_query("COMMIT");
+  echo "OK/" . $info;
 }

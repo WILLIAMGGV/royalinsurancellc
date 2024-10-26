@@ -1,0 +1,1 @@
+<p>Hello from <strong>CKEdit</strong>or 5!</p>
