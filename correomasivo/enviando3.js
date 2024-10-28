@@ -72,8 +72,6 @@ function enviar() {
     if (checkboxes[i].checked) {
       total = total + 1;
       if (parseInt(total) - 1 == parseInt(cola)) {
-        alert(checkboxes[i].value);
-
         email = checkboxes[i].value;
 
         document.getElementById("cola").value = parseInt(cola) + 1;
