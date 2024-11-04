@@ -20,23 +20,25 @@
 
   <title>Enviar Correo Masivo</title>
 </head>
-<script src="enviando3.js"></script>
+<script src="enviando5.js"></script>
 
 <body>
 
   <nav class="navbar navbar-light" style="background-color: #55468c !important;">
-    <a class="navbar-brand" href="#">
-      <strong style="color: #fff">CORREO MASIVO --- Creado Por: William Godoy</strong>
+    <a class="navbar-brand" href="https://instagram.com/01.asistentevirtual">
+      <strong style="color: #fff">ENVIO DE CORREO MASIVO --- Created by: 01.ASISTENTEVIRTUAL</strong>
     </a>
   </nav>
+
+
+
 
   <div class="container mt-5">
 
 
-    <h3 class="text-center mb-5" style="font-weight: 800; font-size: 35px">
-      ENVIO DE CORREO MASIVO
-      <hr>
-    </h3>
+    <img src="../img/logo.png" width="200px" alt="">
+    <hr>
+
 
 
 
@@ -124,15 +126,29 @@
               <p id="resp"></p>
             </div>
           </div>
-          <div class="mt-10">
+          <div id="formumensaje" class="">
+            <div class="mt-10">
+              <div>
+                <label for="asunto" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Asunto</label>
+                <input type="text" id="asunto" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+              </div>
+            </div>
+            <div class="mt-2">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mensaje</label>
+              <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""></textarea>
+            </div>
+            <div class="w-full mt-6">
+              <div>
+                <input type="button" onclick="enviarcorreomasivo()" style="display: none;" name="enviarform" id="enviarform" class="bg-green-500 p-2 w-[150px] w-full rounded-lg hover:bg-green-900 hover:text-white text-lg font-medium cursor-pointer" value="Enviar Mensaje Masivo">
 
-          </div>
-          <div class="w-full">
-            <div>
-              <input type="button" onclick="enviarcorreomasivo()" style="display: none;" name="enviarform" id="enviarform" class="bg-green-500 p-2 w-[150px] w-full rounded-lg hover:bg-green-900 hover:text-white text-lg font-medium cursor-pointer" value="Enviar Mensaje Masivo">
-              <div id="descripcion" style="color: blue; font-weight: 900; font-size:larger" align="center"></div>
+              </div>
             </div>
           </div>
+          <div id="enviandomensaje" class="hidden flex flex-col place-content-center  place-items-center">
+            <img src="enviarcorreo.gif" width="200px" alt="">
+            <div id="descripcion" style="color: blue; font-weight: 900; font-size:larger" align="center">Enviando 1/10</div>
+          </div>
+
         </div>
       </div>
   </div>
