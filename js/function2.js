@@ -26,7 +26,7 @@ menu1.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "OBAMACARE";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Descubre los beneficios de Obamacare y asegúrate de tener acceso a servicios médicos de calidad sin comprometer tu bolsillo.";
 });
 
 const menu2 = document.getElementById("menu2");
@@ -38,7 +38,7 @@ menu2.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "MEDICARE";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Prepárate para disfrutar de una jubilación plena y sin preocupaciones con Medicare.";
 });
 
 const menu3 = document.getElementById("menu3");
@@ -62,7 +62,7 @@ menu4.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "P&Oacute;LIZAS DE VIDA";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Protege a tus seres queridos y asegura su futuro. Obtén la tranquilidad de saber que tu legado está seguro.";
 });
 
 const menu5 = document.getElementById("menu5");
@@ -74,7 +74,7 @@ menu5.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "P&Oacute;LIZAS ACCIDENTALES";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Desde pequeños percances hasta eventos imprevistos, asegúrate de estar cubierto en cualquier situación.";
 });
 
 const menu6 = document.getElementById("menu6");
@@ -86,7 +86,7 @@ menu6.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "PLANES DE DESCUENTO PARA INDOCUMENTADOS";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Los planes de descuento para indocumentados  son una opción asequible para acceder a atención médica.";
 });
 
 const menu7 = document.getElementById("menu7");
@@ -98,7 +98,7 @@ menu7.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "P&Oacute;LIZAS DE AUTOS";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Las pólizas de auto, protegen a los propietarios de vehículos contra pérdidas financieras por accidentes, robo, daños y lesiones a terceros.";
 });
 
 const menu8 = document.getElementById("menu8");
@@ -110,7 +110,7 @@ menu8.addEventListener("mouseover", function () {
   titlesubmenu.innerHTML = "P&Oacute;LIZAS DE HOME";
   const descripcionsubmenu = document.getElementById("desmenu");
   descripcionsubmenu.innerHTML =
-    "Sonríe con confianza y cuida tus ojos. Nuestros seguros dentales y de visión te ofrecen una cobertura completa para mantener tu bienestar bucal y visual.";
+    "Las pólizas de hogar, o seguros de vivienda, protegen tu propiedad y su contenido contra pérdidas financieras causadas por incendios, robos, vandalismo, desastres naturales y responsabilidad civil.";
 });
 
 function cambiarefecto() {
