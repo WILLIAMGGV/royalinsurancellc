@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .circle {
+        position: absolute; /* Para posicionar el círculo */
+        width: 100px; /* Tamaño inicial del círculo */
+        height: 100px; /* Tamaño inicial del círculo */
+        border-radius: 50%; /* Forma circular */
+        background-color: rgba(79, 70, 229, 0.7); /* Color del círculo */
+        transition: transform 0.5s ease, opacity 0.5s ease; /* Transiciones suaves */
+        transform: scale(0); /* Comienza oculto */
+        opacity: 0; /* Comienza invisible */
+      }
+
+      .hovered .circle {
+        transform: scale(1.5); /* Aumentar el tamaño al pasar el mouse */
+        opacity: 1; /* Hacer visible el círculo */
+      }
+    </style>
+    <title>Animación de Círculo al Pasar el Mouse</title>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100 relative">
+    <div class="relative">
+      <span
+        class="text-4xl font-bold cursor-pointer relative hover:text-blue-500"
+      >
+        A
+        <span class="circle"></span>
+      </span>
+    </div>
+
+    <script>
+      const letter = document.querySelector("span");
+      const circle = document.querySelector(".circle");
+
+      letter.addEventListener("mouseenter", (e) => {
+        const rect = letter.getBoundingClientRect();
+        circle.style.left = `${rect.left + rect.width / 2 - 50}px`; // Centra el círculo
+        circle.style.top = `${rect.top + rect.height / 2 - 50}px`; // Centra el círculo
+        letter.classList.add("hovered");
+      });
+
+      letter.addEventListener("mouseleave", () => {
+        letter.classList.remove("hovered");
+      });
+    </script>
+  </body>
+</html>

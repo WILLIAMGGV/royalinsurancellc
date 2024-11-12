@@ -81,7 +81,7 @@ const menu6 = document.getElementById("menu6");
 
 menu6.addEventListener("mouseover", function () {
   const imgService = document.getElementById("imgservice");
-  imgService.src = "/img/service6.jpg";
+  imgService.src = "/img/service10.jpg";
   const titlesubmenu = document.getElementById("titlesubmenu");
   titlesubmenu.innerHTML = "PLANES DE DESCUENTO PARA INDOCUMENTADOS";
   const descripcionsubmenu = document.getElementById("desmenu");
@@ -93,7 +93,7 @@ const menu7 = document.getElementById("menu7");
 
 menu7.addEventListener("mouseover", function () {
   const imgService = document.getElementById("imgservice");
-  imgService.src = "/img/service7.jpg";
+  imgService.src = "/img/service11.jpg";
   const titlesubmenu = document.getElementById("titlesubmenu");
   titlesubmenu.innerHTML = "P&Oacute;LIZAS DE AUTOS";
   const descripcionsubmenu = document.getElementById("desmenu");
@@ -105,7 +105,7 @@ const menu8 = document.getElementById("menu8");
 
 menu8.addEventListener("mouseover", function () {
   const imgService = document.getElementById("imgservice");
-  imgService.src = "/img/service8.jpg";
+  imgService.src = "/img/service12.png";
   const titlesubmenu = document.getElementById("titlesubmenu");
   titlesubmenu.innerHTML = "P&Oacute;LIZAS DE HOME";
   const descripcionsubmenu = document.getElementById("desmenu");
